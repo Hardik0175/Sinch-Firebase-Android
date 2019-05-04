@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <FrameLayout
+        android:id="@+id/fl_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_on"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="end|bottom"
+            android:src="@android:color/white"
+            android:visibility="gone"
+            app:civ_border_color="@android:color/darker_gray"
+            app:civ_border_width="9dp"
+            app:civ_circle_background_color="@color/colorAccent" />
+
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/fl_t"
+        android:text="Username"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
