@@ -36,7 +36,7 @@ public class MapFragment extends Fragment  {
     MapView mMapView;
     private GoogleMap mGoogleMap;
     public static int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 1;
-    private static final int DEFAULT_ZOOM = 15;
+    private static final int DEFAULT_ZOOM = 16;
     private final LatLng mDefaultLocation = new LatLng(-33.8523341, 151.2106085);
 
     private boolean mLocationPermissionGranted;
